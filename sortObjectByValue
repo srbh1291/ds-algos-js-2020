@@ -1,0 +1,13 @@
+var data = { zIndex:99,
+             name:278,
+             age:25, 
+             position:132,
+             amount:298,
+             manager:101 };
+             
+   data = Object.keys(data)
+   		  .sort((a,b)=>data[b]-data[a])
+          .map(key=>({[key]:data[key]}))
+     
+
+    console.log(data)
